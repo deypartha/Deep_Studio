@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deep Studio | Photography, Photostats & Bolero Car Rental in Deriapur, West Bengal</title>
-  <meta name="description" content="Welcome to Deep Studio in Deriapur, West Bengal. We specialize in wedding and birthday photography, photostat/Xerox copying services, and Mahindra Bolero car rentals.">
-  <meta name="keywords" content="Deep Studio, Photography Deriapur, Photostat Deriapur, Bolero renting Deriapur, West Bengal car rental, marriage photography, birthday photo shoot, photocopy shop Deriapur">
+  <title>Deep Studio | Professional Photography Services in Deriapur, West Bengal</title>
+  <meta name="description" content="Capture your golden memories with Deep Studio, Deriapur's premium photography team. Specializing in pre-wedding, wedding day, post-wedding shoots, birthdays, and rice ceremonies.">
+  <meta name="keywords" content="Deep Studio, Photography Deriapur, Wedding photography West Bengal, pre-wedding photoshoot, post-wedding shoot, birthday photo shoot, rice ceremony photography, Annaprashan, West Bengal photographer">
   <meta name="robots" content="index, follow">
   
   <!-- Font Awesome Icons -->
@@ -19,19 +19,26 @@
   <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="logo" id="nav-logo">
+      <a href="#home" class="logo" id="nav-logo">
         <i class="fas fa-camera-retro"></i> Deep Studio
       </a>
       
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="photography.html">Photography & Photostats</a></li>
-        <li><a href="car-rental.html">Bolero Car Rental</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#home" class="active" data-i18n="nav_home">Home</a></li>
+        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+        <li><a href="#portfolio" data-i18n="nav_gallery">Portfolio</a></li>
+        <li><a href="#packages" data-i18n="nav_packages">Packages</a></li>
+        <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
       </ul>
       
       <div class="nav-actions">
+        <!-- English / Bengali Toggle Button (E & B) -->
+        <div class="lang-toggle-container">
+          <button id="lang-toggle-en" class="lang-btn active" aria-label="Switch to English">E</button>
+          <button id="lang-toggle-bn" class="lang-btn" aria-label="Switch to Bengali">B</button>
+        </div>
+        
         <!-- Bright / Dark Toggle Button -->
         <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Brightness Mode">
           <i class="fas fa-sun" title="Light Mode"></i>
@@ -47,88 +54,523 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero">
+  <header class="hero" id="home">
     <div class="hero-container">
       <div class="hero-content">
-        <span class="section-tag">Welcome to Deep Studio</span>
-        <h1>Capture Life's Moments & <span>Drive Your Journeys</span></h1>
-        <p>Your one-stop destination in Deriapur, West Bengal. From professional wedding photography and instant photostats to rugged Mahindra Bolero renting for all your travel needs.</p>
+        <span class="section-tag" data-i18n="hero_tag">Creative Storytellers</span>
+        <h1 data-i18n="hero_title">Capture Your <span>Golden Moments</span></h1>
+        <p data-i18n="hero_desc">Deep Studio is Deriapur's premium photography studio. We blend artistic vision with cutting-edge gear to freeze your weddings, birthdays, rice ceremonies, and special celebrations in timeless frames.</p>
         <div class="hero-btns">
-          <a href="photography.html" class="btn btn-primary"><i class="fas fa-camera"></i> Explore Studio</a>
-          <a href="car-rental.html" class="btn btn-secondary"><i class="fas fa-car"></i> Rent a Bolero</a>
+          <a href="#portfolio" class="btn btn-primary"><i class="fas fa-images"></i> <span data-i18n="hero_btn_explore">Explore Work</span></a>
+          <a href="#booking" class="btn btn-secondary"><i class="fas fa-calendar-alt"></i> <span data-i18n="hero_btn_book">Book a Shoot</span></a>
         </div>
       </div>
       <div class="hero-image-wrapper">
         <div class="hero-image">
-          <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80" alt="Deep Studio Creative & Travel Services" id="hero-img">
+          <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80" alt="Professional Camera Studio Setup" id="hero-img">
         </div>
         <div class="hero-badge">
-          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-award"></i>
           <div class="hero-badge-text">
-            100% Reliable Service
-            <span>Trusted by 1000+ local families</span>
+            <span data-i18n="hero_badge_title">Premium Quality</span>
+            <span data-i18n="hero_badge_sub">Trusted by 1000+ local families</span>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Core Services Portal -->
-  <section class="section">
+  <!-- Services Section -->
+  <section class="section" id="services">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-tag">Our Services</span>
-        <h2 class="section-title">What We Do Best</h2>
-        <p class="section-desc">We combine creativity with utility, providing essential local services to the community of Deriapur and surrounding West Bengal regions.</p>
+        <span class="section-tag" data-i18n="services_tag">Our Expertise</span>
+        <h2 class="section-title" data-i18n="services_title">Photography Services</h2>
+        <p class="section-desc" data-i18n="services_desc">We specialize in various creative photography niches. Explore our features and book your session today.</p>
       </div>
       
-      <div class="portal-grid">
-        <!-- Photography & Photostat Card -->
-        <div class="portal-card">
-          <div>
-            <div class="portal-icon">
-              <i class="fas fa-images"></i>
+      <div class="services-container">
+        <!-- Wedding Photography Card -->
+        <div class="service-detail-card">
+          <div class="service-detail-header">
+            <div class="service-icon">
+              <i class="fas fa-ring"></i>
             </div>
-            <h3>Photography & Photostat Studio</h3>
-            <p>High-quality photography services for all occasions alongside fast, reliable photostat/Xerox scanning and document printing.</p>
-            <ul class="portal-features">
-              <li><i class="fas fa-check"></i> Marriage, Birthday & Event Shoots</li>
-              <li><i class="fas fa-check"></i> High-Speed B&W and Color Photostats</li>
-              <li><i class="fas fa-check"></i> Professional Photo Restoration & Framing</li>
-              <li><i class="fas fa-check"></i> Instant Passport-Size Photos</li>
-            </ul>
+            <h3 data-i18n="service_wedding_title">Wedding & Pre/Post Wedding</h3>
           </div>
-          <a href="photography.html" class="btn btn-secondary">Learn More <i class="fas fa-arrow-right"></i></a>
+          <p class="service-detail-desc" data-i18n="service_wedding_desc">Make your grand wedding unforgettable. We cover everything from the exciting preparation to the final reception with cinematic styling.</p>
+          
+          <div class="inner-features">
+            <h4 data-i18n="sub_features_title">Key Services Included:</h4>
+            <div class="features-grid">
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h5 data-i18n="feat_pre_wedding_title">Pre-Wedding Shoot</h5>
+                  <p data-i18n="feat_pre_wedding_desc">Romantic outdoor sessions at scenic locations in West Bengal with custom theme concepts.</p>
+                  <button class="btn-text-link" onclick="triggerBooking('wedding', 'pre-wedding', 'pre-wedding-pack')" data-i18n="btn_book_this">Book Pre-Wedding &rarr;</button>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h5 data-i18n="feat_wedding_day_title">Wedding Day Coverage</h5>
+                  <p data-i18n="feat_wedding_day_desc">Traditional rituals, emotional candid moments, drone photography, and live screening.</p>
+                  <button class="btn-text-link" onclick="triggerBooking('wedding', 'wedding-day', 'premium-wedding-pack')" data-i18n="btn_book_this">Book Wedding Day &rarr;</button>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h5 data-i18n="feat_post_wedding_title">Post-Wedding Shoot</h5>
+                  <p data-i18n="feat_post_wedding_desc">Beautiful couple portraits captured relaxed after the ceremony, preserving the initial wedding glow.</p>
+                  <button class="btn-text-link" onclick="triggerBooking('wedding', 'post-wedding', 'premium-wedding-pack')" data-i18n="btn_book_this">Book Post-Wedding &rarr;</button>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h5 data-i18n="feat_bridal_portrait_title">Bridal Portraiture</h5>
+                  <p data-i18n="feat_bridal_portrait_desc">Dedicated high-fashion close-up shots of the bride, capturing intricate makeup and jewelry details.</p>
+                  <button class="btn-text-link" onclick="triggerBooking('wedding', 'bridal-portrait', 'custom-pack')" data-i18n="btn_book_this">Book Bridal Shoot &rarr;</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Bolero Car Rental Card -->
-        <div class="portal-card">
-          <div>
-            <div class="portal-icon">
-              <i class="fas fa-car-side"></i>
+        <!-- Secondary Services Grid -->
+        <div class="secondary-services-grid">
+          <!-- Birthday & Kids -->
+          <div class="service-detail-card mini">
+            <div class="service-detail-header">
+              <div class="service-icon">
+                <i class="fas fa-birthday-cake"></i>
+              </div>
+              <div>
+                <h3 data-i18n="service_birthday_title">Birthday & Kids Shoots</h3>
+                <p data-i18n="service_birthday_desc">From magical first birthdays to creative baby photography. We capture your child's pure, adorable smiles.</p>
+              </div>
             </div>
-            <h3>Bolero Car Renting</h3>
-            <p>Hire our rugged, clean, and well-maintained Mahindra Bolero for family trips, wedding transportation, and local tours around West Bengal.</p>
-            <ul class="portal-features">
-              <li><i class="fas fa-check"></i> Mahindra Bolero in top mechanical shape</li>
-              <li><i class="fas fa-check"></i> Professional, polite, and local drivers</li>
-              <li><i class="fas fa-check"></i> Affordable daily, hourly, and trip rates</li>
-              <li><i class="fas fa-check"></i> Ideal for rough terrain and family gatherings</li>
+            <ul class="mini-features">
+              <li><i class="fas fa-star"></i> <span data-i18n="feat_baby_portrait">Baby Portraiture</span> <button class="btn-inline-link" onclick="triggerBooking('birthday', 'baby-portrait', 'birthday-pack')" data-i18n="btn_book_short">Book</button></li>
+              <li><i class="fas fa-star"></i> <span data-i18n="feat_birthday_event">Birthday Event Coverage</span> <button class="btn-inline-link" onclick="triggerBooking('birthday', 'birthday-event', 'birthday-pack')" data-i18n="btn_book_short">Book</button></li>
+              <li><i class="fas fa-star"></i> <span data-i18n="feat_cake_smash">Smash the Cake Sessions</span> <button class="btn-inline-link" onclick="triggerBooking('birthday', 'cake-smash', 'birthday-pack')" data-i18n="btn_book_short">Book</button></li>
             </ul>
           </div>
-          <a href="car-rental.html" class="btn btn-secondary">Book Vehicle <i class="fas fa-arrow-right"></i></a>
+
+          <!-- Rice Ceremony -->
+          <div class="service-detail-card mini">
+            <div class="service-detail-header">
+              <div class="service-icon">
+                <i class="fas fa-baby"></i>
+              </div>
+              <div>
+                <h3 data-i18n="service_rice_title">Rice Ceremony (Annaprashan)</h3>
+                <p data-i18n="service_rice_desc">A baby's first solid food intake is a sacred milestone. We cover the puja, rituals, and guest interactions.</p>
+              </div>
+            </div>
+            <ul class="mini-features">
+              <li><i class="fas fa-star"></i> <span data-i18n="feat_rice_rituals">Puja & Ritual Coverage</span> <button class="btn-inline-link" onclick="triggerBooking('rice-ceremony', 'rice-rituals', 'rice-ceremony-pack')" data-i18n="btn_book_short">Book</button></li>
+              <li><i class="fas fa-star"></i> <span data-i18n="feat_rice_portraits">Family Portrait Session</span> <button class="btn-inline-link" onclick="triggerBooking('rice-ceremony', 'rice-portraits', 'rice-ceremony-pack')" data-i18n="btn_book_short">Book</button></li>
+            </ul>
+          </div>
+
+          <!-- Special Events & Portraits -->
+          <div class="service-detail-card mini">
+            <div class="service-detail-header">
+              <div class="service-icon">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div>
+                <h3 data-i18n="service_portraits_title">Maternity & Portraits</h3>
+                <p data-i18n="service_portraits_desc">Cherish the pregnancy journey or get polished professional headshots and family pictures.</p>
+              </div>
+            </div>
+            <ul class="mini-features">
+              <li><i class="fas fa-star"></i> <span data-i18n="feat_maternity">Maternity Photoshoot</span> <button class="btn-inline-link" onclick="triggerBooking('portraits', 'maternity', 'custom-pack')" data-i18n="btn_book_short">Book</button></li>
+              <li><i class="fas fa-star"></i> <span data-i18n="feat_headshots">Professional Headshots</span> <button class="btn-inline-link" onclick="triggerBooking('portraits', 'headshots', 'custom-pack')" data-i18n="btn_book_short">Book</button></li>
+              <li><i class="fas fa-star"></i> <span data-i18n="feat_family_portraits">Family Portraiture</span> <button class="btn-inline-link" onclick="triggerBooking('portraits', 'family-portraits', 'custom-pack')" data-i18n="btn_book_short">Book</button></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Reviews / Testimonials -->
-  <section class="section testimonials-section">
+  <!-- Portfolio / Past Events Gallery Section -->
+  <section class="section testimonials-section" id="portfolio">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-tag">Reviews</span>
-        <h2 class="section-title">Trusted By the Deriapur Community</h2>
-        <p class="section-desc">Here is what our clients have to say about our professional photography and dependable Bolero car rental services.</p>
+        <span class="section-tag" data-i18n="gallery_tag">Our Portfolio</span>
+        <h2 class="section-title" data-i18n="gallery_title">Past Event Highlights</h2>
+        <p class="section-desc" data-i18n="gallery_desc">Browse through some of our actual photoshoots and cinematic video clips captured across West Bengal.</p>
+      </div>
+
+      <!-- Portfolio Filters -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+        <button class="filter-btn" data-filter="wedding" data-i18n="filter_wedding">Wedding</button>
+        <button class="filter-btn" data-filter="pre-wedding" data-i18n="filter_pre_wedding">Pre-Wedding</button>
+        <button class="filter-btn" data-filter="birthday" data-i18n="filter_birthday">Birthday</button>
+        <button class="filter-btn" data-filter="rice-ceremony" data-i18n="filter_rice">Rice Ceremony</button>
+        <button class="filter-btn" data-filter="videos" data-i18n="filter_videos">Videos</button>
+      </div>
+      
+      <!-- Portfolio Grid -->
+      <div class="gallery-grid" id="portfolio-grid">
+        <!-- Gallery Item 1 (Wedding) -->
+        <div class="gallery-item" data-category="wedding">
+          <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&fit=crop&w=800&q=80" alt="Beautiful Indian Wedding Couple Shoot">
+          <div class="gallery-overlay">
+            <h4 data-i18n="gal_item_1_title">Rituparna & Sourav</h4>
+            <span data-i18n="gal_item_1_sub">Wedding Day</span>
+          </div>
+        </div>
+        
+        <!-- Gallery Item 2 (Birthday) -->
+        <div class="gallery-item" data-category="birthday">
+          <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Birthday Party Child Photography">
+          <div class="gallery-overlay">
+            <h4 data-i18n="gal_item_2_title">Aarav's 1st Birthday</h4>
+            <span data-i18n="gal_item_2_sub">Birthday Shoot</span>
+          </div>
+        </div>
+
+        <!-- Gallery Item 3 (Pre-Wedding) -->
+        <div class="gallery-item" data-category="pre-wedding">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="Pre-Wedding Shoot Outdoor">
+          <div class="gallery-overlay">
+            <h4 data-i18n="gal_item_3_title">Sayantani & Rahul</h4>
+            <span data-i18n="gal_item_3_sub">Pre-Wedding Outdoor</span>
+          </div>
+        </div>
+
+        <!-- Gallery Item 4 (Rice Ceremony) -->
+        <div class="gallery-item" data-category="rice-ceremony">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Rice Ceremony Rituals Baby">
+          <div class="gallery-overlay">
+            <h4 data-i18n="gal_item_4_title">Baby Anish's Rice Ceremony</h4>
+            <span data-i18n="gal_item_4_sub">Rice Ceremony Puja</span>
+          </div>
+        </div>
+
+        <!-- Gallery Item 5 (Wedding Video) -->
+        <div class="gallery-item video-item" data-category="videos" data-video-url="https://www.w3schools.com/html/mov_bbb.mp4">
+          <div class="video-thumbnail-wrapper">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Wedding Highlight Cinematic Reel">
+            <div class="video-play-icon">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <h4 data-i18n="gal_item_5_title">Cinematic Wedding Highlight</h4>
+            <span data-i18n="gal_item_5_sub">Teaser Film</span>
+          </div>
+        </div>
+
+        <!-- Gallery Item 6 (Pre-Wedding Video) -->
+        <div class="gallery-item video-item" data-category="videos" data-video-url="https://www.w3schools.com/html/movie.mp4">
+          <div class="video-thumbnail-wrapper">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" alt="Pre-Wedding Teaser Movie">
+            <div class="video-play-icon">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <h4 data-i18n="gal_item_6_title">Pre-Wedding Love Teaser</h4>
+            <span data-i18n="gal_item_6_sub">Outdoor Story</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Photo Modal Container -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-content">
+      <button id="lightbox-close" class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Enlarged gallery item">
+    </div>
+  </div>
+
+  <!-- Lightbox Video Modal Container -->
+  <div id="video-lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-content video-lightbox-content">
+      <button id="video-lightbox-close" class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <video id="lightbox-video" controls src=""></video>
+    </div>
+  </div>
+
+  <!-- Pricing Packages Section -->
+  <section class="section" id="packages">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="packages_tag">Investment Plans</span>
+        <h2 class="section-title" data-i18n="packages_title">Photography Packages</h2>
+        <p class="section-desc" data-i18n="packages_desc">Find a structured package that fits your celebration. Custom requests are always welcome.</p>
+      </div>
+      
+      <div class="rates-grid">
+        <!-- Pre-Wedding Pack -->
+        <div class="rate-card">
+          <div>
+            <span class="rate-title" data-i18n="pack_pre_title">Pre-Wedding Shoot Pack</span>
+            <div class="rate-price">₹15,000</div>
+            <ul class="rate-features">
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_pre_f1">1 Lead Photographer</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_pre_f2">4 Hours Outdoor Shoot</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_pre_f3">80+ High-Res Edited Images</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_pre_f4">1 Min Cinematic Reel Teaser</span></li>
+              <li><i class="fas fa-times" style="color: #ef4444;"></i> <span data-i18n="pack_pre_f5">Hardcover Photo Book</span></li>
+            </ul>
+          </div>
+          <button class="btn btn-secondary" onclick="triggerBooking('wedding', 'pre-wedding', 'pre-wedding-pack')">
+            <span data-i18n="btn_choose_pack">Choose Package & Book</span>
+          </button>
+        </div>
+
+        <!-- Premium Wedding Package (Featured) -->
+        <div class="rate-card featured">
+          <div class="featured-badge" data-i18n="badge_featured">BEST SELLER</div>
+          <div>
+            <span class="rate-title" data-i18n="pack_wedding_title">Premium Wedding Pack</span>
+            <div class="rate-price">₹35,000</div>
+            <ul class="rate-features">
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_wedding_f1">2 Photographers (Candid + Trad)</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_wedding_f2">Pre-Wedding Session Included</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_wedding_f3">Full Event Day Coverage</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_wedding_f4">250+ Edited Photos + All Raws</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_wedding_f5">5 Min Cinematic Highlight Film</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_wedding_f6">40-Page Premium Leather Album</span></li>
+            </ul>
+          </div>
+          <button class="btn btn-primary" onclick="triggerBooking('wedding', 'wedding-day', 'premium-wedding-pack')">
+            <span data-i18n="btn_choose_pack">Choose Package & Book</span>
+          </button>
+        </div>
+
+        <!-- Birthday Bash Package -->
+        <div class="rate-card">
+          <div>
+            <span class="rate-title" data-i18n="pack_bday_title">Birthday Bash Package</span>
+            <div class="rate-price">₹8,000</div>
+            <ul class="rate-features">
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_bday_f1">1 Professional Photographer</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_bday_f2">3 Hours Birthday Event Coverage</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_bday_f3">80+ Edited Digital Photos</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_bday_f4">Custom Theme Backdrop Setup</span></li>
+              <li><i class="fas fa-times" style="color: #ef4444;"></i> <span data-i18n="pack_bday_f5">Cinematic Teaser Film</span></li>
+            </ul>
+          </div>
+          <button class="btn btn-secondary" onclick="triggerBooking('birthday', 'birthday-event', 'birthday-pack')">
+            <span data-i18n="btn_choose_pack">Choose Package & Book</span>
+          </button>
+        </div>
+
+        <!-- Rice Ceremony Pack -->
+        <div class="rate-card">
+          <div>
+            <span class="rate-title" data-i18n="pack_rice_title">Rice Ceremony Special</span>
+            <div class="rate-price">₹12,000</div>
+            <ul class="rate-features">
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_rice_f1">1 Professional Photographer</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_rice_f2">4 Hours Puja & Ceremony coverage</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_rice_f3">100+ Edited Digital Photos</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_rice_f4">A4 Size Mini Photo Book</span></li>
+              <li><i class="fas fa-times" style="color: #ef4444;"></i> <span data-i18n="pack_rice_f5">Drone Videography</span></li>
+            </ul>
+          </div>
+          <button class="btn btn-secondary" onclick="triggerBooking('rice-ceremony', 'rice-rituals', 'rice-ceremony-pack')">
+            <span data-i18n="btn_choose_pack">Choose Package & Book</span>
+          </button>
+        </div>
+
+        <!-- Complete Ceremony Pack -->
+        <div class="rate-card">
+          <div>
+            <span class="rate-title" data-i18n="pack_complete_title">Complete Ceremony Pack</span>
+            <div class="rate-price">₹55,000</div>
+            <ul class="rate-features">
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_complete_f1">3 Crew Members (Photo + Video)</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_complete_f2">Multi-day (Haldi + Wedding + Rec)</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_complete_f3">Drone Videography + Custom Lights</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_complete_f4">400+ Edited Photos + All Raws</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_complete_f5">30 Min Full cinematic Wedding Film</span></li>
+              <li><i class="fas fa-check"></i> <span data-i18n="pack_complete_f6">2 Hardcover Premium Photo Albums</span></li>
+            </ul>
+          </div>
+          <button class="btn btn-secondary" onclick="triggerBooking('wedding', 'wedding-day', 'complete-ceremony-pack')">
+            <span data-i18n="btn_choose_pack">Choose Package & Book</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Booking Inquiry Form Section -->
+  <section class="section testimonials-section" id="booking">
+    <div class="section-container" style="max-width: 700px;">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="booking_tag">Schedule Shoot</span>
+        <h2 class="section-title" data-i18n="booking_title">Book Your Shoot Session</h2>
+        <p class="section-desc" data-i18n="booking_desc">Pre-fill the packages above or fill out the form manually. We will confirm date availability within 2 hours.</p>
+      </div>
+      
+      <form id="booking-form" class="rate-card" style="text-align: left; padding: 40px;">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="booking-name" class="form-label"><span data-i18n="form_label_name">Full Name</span> *</label>
+            <input type="text" id="booking-name" class="form-input" placeholder="Deep Ghosh" required>
+          </div>
+          <div class="form-group">
+            <label for="booking-phone" class="form-label"><span data-i18n="form_label_phone">Phone Number</span> *</label>
+            <input type="tel" id="booking-phone" class="form-input" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label for="booking-email" class="form-label"><span data-i18n="form_label_email">Email Address</span></label>
+            <input type="email" id="booking-email" class="form-input" placeholder="deep@domain.com">
+          </div>
+          <div class="form-group">
+            <label for="booking-service" class="form-label"><span data-i18n="form_label_service">Photography Service</span> *</label>
+            <select id="booking-service" class="form-select" required>
+              <option value="" data-i18n="opt_choose_service">-- Choose Service --</option>
+              <option value="wedding" data-i18n="opt_wedding">Wedding & Pre/Post Wedding</option>
+              <option value="birthday" data-i18n="opt_birthday">Birthday & Kids Shoot</option>
+              <option value="rice-ceremony" data-i18n="opt_rice">Rice Ceremony (Annaprashan)</option>
+              <option value="portraits" data-i18n="opt_portraits">Maternity & Portrait Session</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="booking-shoot-type" class="form-label"><span data-i18n="form_label_shoot">Specific Shoot Type</span> *</label>
+            <select id="booking-shoot-type" class="form-select" required>
+              <option value="" data-i18n="opt_choose_shoot">-- Select Specific Shoot --</option>
+              <option value="pre-wedding" data-i18n="opt_pre_wedding">Pre-Wedding Shoot</option>
+              <option value="wedding-day" data-i18n="opt_wedding_day">Wedding Day Coverage</option>
+              <option value="post-wedding" data-i18n="opt_post_wedding">Post-Wedding Shoot</option>
+              <option value="bridal-portrait" data-i18n="opt_bridal_portrait">Bridal Portraiture</option>
+              <option value="baby-portrait" data-i18n="opt_baby_portrait">Baby Portraiture</option>
+              <option value="birthday-event" data-i18n="opt_birthday_event">Birthday Event Coverage</option>
+              <option value="cake-smash" data-i18n="opt_cake_smash">Smash the Cake</option>
+              <option value="rice-rituals" data-i18n="opt_rice_rituals">Puja & Rituals Coverage</option>
+              <option value="rice-portraits" data-i18n="opt_rice_portraits">Ceremony Family Portrait</option>
+              <option value="maternity" data-i18n="opt_maternity_shoot">Maternity Photoshoot</option>
+              <option value="headshots" data-i18n="opt_headshots_shoot">Professional Headshots</option>
+              <option value="family-portraits" data-i18n="opt_family_shoot">Family Portraiture</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="booking-package" class="form-label"><span data-i18n="form_label_package">Preferred Package</span> *</label>
+            <select id="booking-package" class="form-select" required>
+              <option value="" data-i18n="opt_choose_pack">-- Select Package --</option>
+              <option value="pre-wedding-pack" data-i18n="opt_pack_pre_wed">Pre-Wedding Shoot Pack (₹15,000)</option>
+              <option value="premium-wedding-pack" data-i18n="opt_pack_prem_wed">Premium Wedding Pack (₹35,000)</option>
+              <option value="complete-ceremony-pack" data-i18n="opt_pack_comp_cer">Complete Ceremony Pack (₹55,000)</option>
+              <option value="birthday-pack" data-i18n="opt_pack_bday">Birthday Bash Package (₹8,000)</option>
+              <option value="rice-ceremony-pack" data-i18n="opt_pack_rice">Rice Ceremony Special (₹12,000)</option>
+              <option value="custom-pack" data-i18n="opt_pack_custom">Custom Shoot / Other Budget</option>
+            </select>
+          </div>
+          <div class="form-group full-width">
+            <label for="booking-date" class="form-label"><span data-i18n="form_label_date">Event Date</span> *</label>
+            <input type="date" id="booking-date" class="form-input" required>
+          </div>
+          <div class="form-group full-width">
+            <label for="booking-message" class="form-label"><span data-i18n="form_label_message">Shoot Details / Special Notes</span> *</label>
+            <textarea id="booking-message" class="form-textarea" placeholder="Tell us about the location, theme ideas, duration, or timing details..." required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+          <i class="fas fa-paper-plane"></i> <span data-i18n="btn_submit_booking">Send Booking Request</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="section-container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;" class="about-grid-wrapper">
+        <div>
+          <span class="section-tag" data-i18n="about_tag">Meet the Team</span>
+          <h2 style="font-size: 2.25rem; color: var(--text-primary); margin-bottom: 20px;" data-i18n="about_title">Crafting Memories Behind the Lens</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 20px;" data-i18n="about_p1">
+            Deep Studio is Deriapur’s premier photography center. Founded with a vision to capture raw, authentic emotions of local families in West Bengal, we combine art with high-tech execution.
+          </p>
+          <p style="color: var(--text-secondary); margin-bottom: 20px;" data-i18n="about_p2">
+            Over the years, we have grown into a dedicated crew of photographers, videographers, and editors, covering grand scale weddings, intimate rice ceremonies, birthday themes, and creative portrait sessions.
+          </p>
+          <p style="color: var(--text-secondary);" data-i18n="about_p3">
+            Our goal is simple: capture your precious moments in their natural beauty so you can relive them for generations to come.
+          </p>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+          <div class="portal-card stats-card" style="padding: 24px; text-align: center;">
+            <h3 style="font-size: 2.5rem; color: var(--accent); font-family: var(--font-heading); margin-bottom: 8px;">10+</h3>
+            <p style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted);" data-i18n="stats_years">Years Experience</p>
+          </div>
+          <div class="portal-card stats-card" style="padding: 24px; text-align: center;">
+            <h3 style="font-size: 2.5rem; color: var(--accent); font-family: var(--font-heading); margin-bottom: 8px;">500+</h3>
+            <p style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted);" data-i18n="stats_shoots">Happy Shoots</p>
+          </div>
+          <div class="portal-card stats-card" style="padding: 24px; text-align: center;">
+            <h3 style="font-size: 2.5rem; color: var(--accent); font-family: var(--font-heading); margin-bottom: 8px;">100%</h3>
+            <p style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted);" data-i18n="stats_satisfaction">Satisfaction</p>
+          </div>
+          <div class="portal-card stats-card" style="padding: 24px; text-align: center;">
+            <h3 style="font-size: 2.5rem; color: var(--accent); font-family: var(--font-heading); margin-bottom: 8px;">25+</h3>
+            <p style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted);" data-i18n="stats_awards">Local Awards</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Crew Members -->
+      <div style="margin-top: 80px;">
+        <div class="section-header" style="margin-bottom: 40px;">
+          <h3 style="font-size: 1.8rem; color: var(--text-primary);" data-i18n="crew_title">The Photography Crew</h3>
+        </div>
+        <div class="rates-grid">
+          <!-- Deep Ghosh -->
+          <div class="rate-card crew-card" style="padding: 30px; align-items: center; text-align: center;">
+            <div class="crew-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Deep Ghosh - Founder & Lead Photographer">
+            </div>
+            <h4 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 4px;">Deep Ghosh</h4>
+            <span class="crew-role" data-i18n="crew_member_1_role">Founder & Lead Photographer</span>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);" data-i18n="crew_member_1_bio">An artistic visionary with a lens, specializing in wedding candid frames and cinematic outdoor lighting.</p>
+          </div>
+
+          <!-- Riya Banerjee -->
+          <div class="rate-card crew-card" style="padding: 30px; align-items: center; text-align: center;">
+            <div class="crew-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Riya Banerjee - Portrait Specialist">
+            </div>
+            <h4 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 4px;">Riya Banerjee</h4>
+            <span class="crew-role" data-i18n="crew_member_2_role">Kids & Portrait Specialist</span>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);" data-i18n="crew_member_2_bio">Talented in baby portraits and themed birthday shoots, bringing out natural, happy children smiles.</p>
+          </div>
+
+          <!-- Amit Sen -->
+          <div class="rate-card crew-card" style="padding: 30px; align-items: center; text-align: center;">
+            <div class="crew-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Amit Sen - Senior Video Editor">
+            </div>
+            <h4 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 4px;">Amit Sen</h4>
+            <span class="crew-role" data-i18n="crew_member_3_role">Senior Editor & Videographer</span>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);" data-i18n="crew_member_3_bio">Master of cinematic storytelling, crafting beautiful teaser clips and full wedding reels.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Testimonials Carousel Section -->
+  <section class="section testimonials-section" id="reviews">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="reviews_tag">Reviews</span>
+        <h2 class="section-title" data-i18n="reviews_title">Loved by the Community</h2>
+        <p class="section-desc" data-i18n="reviews_desc">Read what local families in Deriapur say about their experience booking shoots with us.</p>
       </div>
       
       <div class="carousel-container">
@@ -139,10 +581,10 @@
               <div class="testimonial-stars">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
               </div>
-              <p class="testimonial-text">"We hired Deep Studio for my sister's marriage photography and also rented their Mahindra Bolero to transport relatives. The photos turned out stunningly beautiful, and the car was clean, on time, and comfortable. Incredible service in Deriapur!"</p>
+              <p class="testimonial-text" data-i18n="rev_1_text">"We booked Deep Studio for my sister's marriage. The pre-wedding shoot was absolutely beautiful, and the wedding day candid photographs were magical. Their behavior was extremely polite and professional. Highly recommended!"</p>
               <div class="testimonial-author">
                 <h4>Subrata Banerjee</h4>
-                <span>Wedding Client & Car Renter</span>
+                <span data-i18n="rev_1_client">Wedding Client</span>
               </div>
             </div>
           </div>
@@ -152,10 +594,10 @@
               <div class="testimonial-stars">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
               </div>
-              <p class="testimonial-text">"Deep Studio is my go-to shop for all photocopy and document printing work. They are super fast and their prices are very fair. I also rented the Bolero for a weekend trip to Santiniketan—the driver was very safe and professional."</p>
+              <p class="testimonial-text" data-i18n="rev_2_text">"Deep Studio captured my son's Rice Ceremony (Annaprashan) ritual. The photographers were patient with the baby, and the mini leather album we received is of top premium quality. Cheapest rates in Deriapur!"</p>
               <div class="testimonial-author">
                 <h4>Priyanka Mondal</h4>
-                <span>Regular Printing Client & Tourist</span>
+                <span data-i18n="rev_2_client">Rice Ceremony Client</span>
               </div>
             </div>
           </div>
@@ -165,10 +607,10 @@
               <div class="testimonial-stars">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
               </div>
-              <p class="testimonial-text">"Best birthday photoshoot for my son. Deep Studio captures the emotions perfectly. The photostat quality is crisp and quick, and their Bolero renting is the most reliable transport option in Deriapur."</p>
+              <p class="testimonial-text" data-i18n="rev_3_text">"Excellent birthday party photoshoot. The themed balloons setup was beautiful and the baby pictures turned out very colorful. We also got passport prints instantly. Thanks to Riya and Deep Ghosh!"</p>
               <div class="testimonial-author">
                 <h4>Amit Ghosh</h4>
-                <span>Birthday Photoshoot Client</span>
+                <span data-i18n="rev_3_client">Birthday Shoot Client</span>
               </div>
             </div>
           </div>
@@ -182,53 +624,155 @@
     </div>
   </section>
 
+  <!-- Contact & General Query Form Section -->
+  <section class="section" id="contact">
+    <div class="section-container">
+      <div class="contact-grid">
+        <!-- Contact Info column -->
+        <div class="contact-info-card">
+          <div>
+            <span class="section-tag" data-i18n="contact_tag">Contact Details</span>
+            <h2 style="font-size: 1.8rem; color: var(--text-primary); margin-bottom: 24px;" data-i18n="contact_title">Our Studio Office</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 30px;" data-i18n="contact_desc">Drop by our physical studio in Deriapur to look through our hardcopy album options, frames, or chat about custom packages.</p>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-item-details">
+              <h4 data-i18n="cont_address_title">Studio Address</h4>
+              <p data-i18n="cont_address_text">Main Road (Near Bazar), Deriapur,<br>West Bengal 713101, India</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-item-details">
+              <h4 data-i18n="cont_phone_title">Phone Numbers</h4>
+              <p><a href="tel:+919876543210">+91 98765 43210</a> (Studio Line)</p>
+              <p><a href="tel:+918765432109">+91 87654 32109</a> (Mobile Hotline)</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-item-details">
+              <h4 data-i18n="cont_email_title">Email Inquiries</h4>
+              <p><a href="mailto:info@deepstudio.com">info@deepstudio.com</a></p>
+            </div>
+          </div>
+
+          <div>
+            <h4 style="margin-bottom: 12px; font-size: 0.95rem; font-weight: 700; text-transform: uppercase;" data-i18n="cont_social_title">Connect Digitally</h4>
+            <div class="contact-socials">
+              <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/919876543210" class="social-btn" aria-label="WhatsApp" style="background-color: #25d366;"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact General Form column -->
+        <div class="rate-card" style="text-align: left; padding: 40px; justify-content: flex-start;">
+          <span class="section-tag" data-i18n="cont_form_tag">Send Message</span>
+          <h2 style="font-size: 1.8rem; color: var(--text-primary); margin-bottom: 24px;" data-i18n="cont_form_title">General Inquiry</h2>
+          
+          <form id="contact-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contact-name" class="form-label"><span data-i18n="form_label_name">Full Name</span> *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-phone" class="form-label"><span data-i18n="form_label_phone">Phone Number</span> *</label>
+                <input type="tel" id="contact-phone" class="form-input" placeholder="Mobile Number" required>
+              </div>
+              <div class="form-group full-width">
+                <label for="contact-email" class="form-label"><span data-i18n="form_label_email">Email Address</span> *</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="name@domain.com" required>
+              </div>
+              <div class="form-group full-width">
+                <label for="contact-message" class="form-label"><span data-i18n="form_label_message_query">Your Message Details</span> *</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Ask us a general question about timing, camera gear, delivery time..." required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              <i class="fas fa-paper-plane"></i> <span data-i18n="btn_send_msg">Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Map Section -->
+  <section class="section testimonials-section" id="map">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="map_tag">Location Map</span>
+        <h2 class="section-title" data-i18n="map_title">Find Us in Deriapur</h2>
+        <p class="section-desc" data-i18n="map_desc">Visit our location situated near Main Bazar, Deriapur, West Bengal.</p>
+      </div>
+      
+      <div class="map-container" style="margin-top: 0; background-color: var(--bg-secondary);">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117498.42398418063!2d87.69747766023774!3d23.231221974768393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f848777174db93%3A0xe9fdb1dfec08657!2sDeriapur%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
   <!-- FAQ Section -->
   <section class="section">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-tag">FAQ</span>
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <p class="section-desc">Got questions about our studio photography, photostats, or Bolero renting? Find quick answers below.</p>
+        <span class="section-tag" data-i18n="faq_tag">FAQ</span>
+        <h2 class="section-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+        <p class="section-desc" data-i18n="faq_desc">Got questions about scheduling, delivery timelines, and albums? Find answers here.</p>
       </div>
       
       <div class="faq-list">
         <div class="faq-item">
           <div class="faq-header">
-            <h3 class="faq-question">What kind of events does Deep Studio cover?</h3>
+            <h3 class="faq-question" data-i18n="faq_q1">What geographical areas does Deep Studio cover?</h3>
             <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
           </div>
           <div class="faq-content">
-            <p>We provide full-service professional photography and videography for marriages, anniversary celebrations, birthdays, rice ceremonies, and other religious and cultural festivals across Deriapur and surrounding districts in West Bengal.</p>
+            <p data-i18n="faq_a1">We are based in Deriapur, West Bengal, but we regularly travel to surrounding districts including Bardhaman, Guskara, Bolpur, and Santiniketan for weddings and pre-wedding shoots.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <div class="faq-header">
-            <h3 class="faq-question">Do you offer bulk document photostating/copying?</h3>
+            <h3 class="faq-question" data-i18n="faq_q2">How long after the photoshoot do we receive our edited photos?</h3>
             <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
           </div>
           <div class="faq-content">
-            <p>Yes! We have high-capacity duplex Xerox machines capable of handling hundreds of copies in black-and-white or color. We serve students, local offices, schools, and individuals with fast turnaround times and bulk discounts.</p>
+            <p data-i18n="faq_a2">We deliver digital previews of the highlights within 7 days. The complete set of edited high-resolution photos and final video films are delivered within 4 to 6 weeks, depending on album curation.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <div class="faq-header">
-            <h3 class="faq-question">How can I rent a Bolero car and what are the rates?</h3>
+            <h3 class="faq-question" data-i18n="faq_q3">Can we customize the photography package features?</h3>
             <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
           </div>
           <div class="faq-content">
-            <p>Renting is simple. You can call us, send a WhatsApp message, or use our contact form. Our rates vary depending on duration (hourly/daily) and distance (local within Deriapur vs outstation trips). All bookings come with an experienced driver.</p>
+            <p data-i18n="faq_a3">Yes, absolutely! Every event is unique. We can add drone shots, increase crew size, print extra copies of photo books, or extend session hours. Contact us for a customized estimate.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <div class="faq-header">
-            <h3 class="faq-question">Can I customize my photography and car rental package?</h3>
+            <h3 class="faq-question" data-i18n="faq_q4">What camera equipment does Deep Studio use?</h3>
             <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
           </div>
           <div class="faq-content">
-            <p>Absolutely! We offer combined packages for marriages and birthdays. For example, you can book us for your wedding photography and hire our Bolero for wedding party transportation at a discounted combo rate.</p>
+            <p data-i18n="faq_a4">We use high-end professional mirrorless cameras (Sony and Canon series) along with prime portrait lenses and advanced drone rigs to ensure sharp, vibrant, and cinematic outputs.</p>
           </div>
         </div>
       </div>
@@ -239,49 +783,50 @@
   <footer class="footer">
     <div class="footer-grid">
       <div class="footer-col">
-        <h3>About Deep Studio</h3>
-        <p>Deep Studio is Deriapur’s leading multi-service center. We aim to capture your cherished memories and make local transport safe, convenient, and affordable.</p>
+        <h3 data-i18n="foot_about_title">About Deep Studio</h3>
+        <p data-i18n="foot_about_desc">Deep Studio is Deriapur’s leading creative photography center. We are dedicated to capturing your life's greatest milestones in vivid frames.</p>
         <div class="contact-socials">
           <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://wa.me/919876543210" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
       
       <div class="footer-col">
-        <h3>Quick Links</h3>
+        <h3 data-i18n="foot_links_title">Quick Navigation</h3>
         <ul class="footer-links">
-          <li><a href="index.html">Home Portal</a></li>
-          <li><a href="photography.html">Photography Studio</a></li>
-          <li><a href="car-rental.html">Bolero Rental</a></li>
-          <li><a href="about.html">About Our Agency</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#home" data-i18n="nav_home">Home</a></li>
+          <li><a href="#services" data-i18n="nav_services">Services</a></li>
+          <li><a href="#portfolio" data-i18n="nav_gallery">Portfolio</a></li>
+          <li><a href="#packages" data-i18n="nav_packages">Packages</a></li>
+          <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h3>Our Services</h3>
+        <h3 data-i18n="foot_services_title">Photography Niches</h3>
         <ul class="footer-links">
-          <li><a href="photography.html#marriage">Marriage Photography</a></li>
-          <li><a href="photography.html#birthday">Birthday Photo Shoots</a></li>
-          <li><a href="photography.html#photostat">Photostat & Xerox</a></li>
-          <li><a href="car-rental.html">Mahindra Bolero Hire</a></li>
-          <li><a href="car-rental.html#tours">Local & Outstation Tours</a></li>
+          <li><a href="#services" data-i18n="feat_pre_wedding_title">Pre-Wedding Shoot</a></li>
+          <li><a href="#services" data-i18n="feat_wedding_day_title">Wedding Day Coverage</a></li>
+          <li><a href="#services" data-i18n="feat_post_wedding_title">Post-Wedding Shoot</a></li>
+          <li><a href="#services" data-i18n="feat_birthday_event">Birthday Event Coverage</a></li>
+          <li><a href="#services" data-i18n="feat_rice_rituals">Rice Ceremony (Annaprashan)</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h3>SEO Keywords & Tags</h3>
-        <p class="seo-text">
-          Looking for a <strong>photography studio in Deriapur</strong>? Or looking for a reliable <strong>Bolero car renting in Deriapur, West Bengal</strong>? Deep Studio is here for marriage shoots, birthday coverage, fast document printing, Xerox photostats, and SUV car rental. We serve Deriapur and nearby rural and urban networks.
+        <h3 data-i18n="foot_seo_title">SEO Keywords</h3>
+        <p class="seo-text" data-i18n="foot_seo_text">
+          Looking for a professional <strong>wedding photographer in Deriapur</strong>? Or looking for affordable <strong>pre-wedding, birthday, or rice ceremony photo shoots</strong> in Bardhaman, Guskara, West Bengal? Deep Studio provides high-quality candid photography, videography, and albums.
         </p>
       </div>
     </div>
     
     <div class="footer-bottom">
       <p>&copy; 2026 Deep Studio. All rights reserved.</p>
-      <p>Address: Main Road, Deriapur, West Bengal, India</p>
+      <p data-i18n="foot_address">Address: Main Road, Deriapur, West Bengal, India</p>
     </div>
   </footer>
 
